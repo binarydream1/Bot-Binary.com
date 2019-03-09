@@ -5,7 +5,7 @@
          Using binary bot will increase the risk of losing your money exponentially.                                      
                      Please trade only if you are ready to LOSE money!!
                              
-                        " Be Responsible with Your Decision "
+                                   " Be Carefull Guys "
                  ---------------------------------------------------------
 
       
