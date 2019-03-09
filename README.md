@@ -3,7 +3,7 @@ This is tools, functions or parts used by me to build binary bot. You are welcom
 
 -----------------------------------------------------------
 
-[CountingChangeBot](https://gist.githubusercontent.com/binarydream1/f3caab1b3323c0006aed5560ada32194/raw/ca0611706b109d960ac31e3200d1f3582ef4441a/CountChange.xml)
+[CountingChangeBot](https://gist.githubusercontent.com/binarydream1/f3caab1b3323c0006aed5560ada32194/raw/b6ee5a620d36cde3d058ebc1f6e0d9963557a734/CountChange.xml)
 
 ------------------------------------------------------------
 
