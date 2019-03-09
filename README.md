@@ -1,10 +1,11 @@
               ----------------------------------------------------------------                        
                                       {WARNING !!}
-     Trading binary option is very risky for your money. Most people lose money instead of making it!!     
-              Using binary bot will increase the risk of losing your money exponentially.                                      
-                        Please trade only if you are ready to LOSE money!!
+                         Trading binary option is HIGH RISK game. 
+                       Most people lose money instead of making it!!     
+         Using binary bot will increase the risk of losing your money exponentially.                                      
+                     Please trade only if you are ready to LOSE money!!
                              
-                           " Be Responsible with Your Decision "
+                        " Be Responsible with Your Decision "
                  ---------------------------------------------------------
 
       
