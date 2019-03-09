@@ -1,7 +1,7 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
   <variables>
-    <variable type="" id="C15{{X|9?0O6KQZkMGg+">DurationReport</variable>
     <variable type="" id="Upjq+A8S`=-W~$n]=V*O">Hour</variable>
+    <variable type="" id="C15{{X|9?0O6KQZkMGg+">DurationReport</variable>
     <variable type="" id="I$4htM}:MZ=-k;X9I(26">StartTime</variable>
     <variable type="" id="M!pQ5OF|N@[U_([y1uJ_">Minute</variable>
     <variable type="" id="En7Nq`ugF;t;0R-F4OSE">Second</variable>
@@ -206,54 +206,6 @@
         <field name="VAR" id="I$4htM}:MZ=-k;X9I(26" variabletype="">StartTime</field>
         <value name="VALUE">
           <block type="epoch" id="j%X#}!BC-QXb=fQcboJW"></block>
-        </value>
-      </block>
-    </statement>
-  </block>
-  <block type="trade" id="xgH69|xFn9=70w.*3Vo@" x="0" y="106">
-    <field name="MARKET_LIST">volidx</field>
-    <field name="SUBMARKET_LIST">random_index</field>
-    <field name="SYMBOL_LIST">R_100</field>
-    <field name="TRADETYPECAT_LIST">callput</field>
-    <field name="TRADETYPE_LIST">risefall</field>
-    <field name="TYPE_LIST">both</field>
-    <field name="CANDLEINTERVAL_LIST">60</field>
-    <field name="TIME_MACHINE_ENABLED">FALSE</field>
-    <field name="RESTARTONERROR">TRUE</field>
-    <statement name="INITIALIZATION">
-      <block type="procedures_callnoreturn" id="7tt][VEk9:4[=d({zU.)">
-        <mutation name="_StartTime"></mutation>
-      </block>
-    </statement>
-    <statement name="SUBMARKET">
-      <block type="tradeOptions" id="x=V33~4Lb|(sLv`J[:Eb">
-        <field name="DURATIONTYPE_LIST">t</field>
-        <field name="CURRENCY_LIST">USD</field>
-        <value name="DURATION">
-          <shadow type="math_number" id="O*@58sDc=!cOO}*b2vf9">
-            <field name="NUM">5</field>
-          </shadow>
-        </value>
-        <value name="AMOUNT">
-          <shadow type="math_number" id="ml)25~7^q}3I9}vjf:%K">
-            <field name="NUM">1</field>
-          </shadow>
-        </value>
-      </block>
-    </statement>
-  </block>
-  <block type="tick_analysis" id=":e.Y%0UrSDU0j.nou/$F" x="0" y="514">
-    <statement name="TICKANALYSIS_STACK">
-      <block type="notify" id="%(UD5T,)TDlLw6K!uGFa">
-        <field name="NOTIFICATION_TYPE">error</field>
-        <field name="NOTIFICATION_SOUND">silent</field>
-        <value name="MESSAGE">
-          <shadow type="text" id="#;!q_Il?@}NIet3KY?o}">
-            <field name="TEXT">abc</field>
-          </shadow>
-          <block type="procedures_callreturn" id="llvy~C)PwJ%A`y2_)KHe">
-            <mutation name="_Playing Duration"></mutation>
-          </block>
         </value>
       </block>
     </statement>
