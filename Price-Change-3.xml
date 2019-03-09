@@ -1,15 +1,12 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
   <variables>
-    <variable type="" id="UHQ3|=zt6kk8[`s=$pP#">x</variable>
     <variable type="" id="0mT.=JkdHbRfqnITR:G$">PriceChange</variable>
     <variable type="" id="Z*%W5:arc*yG!W[!Uf50">k</variable>
+    <variable type="" id="UHQ3|=zt6kk8[`s=$pP#">x</variable>
     <variable type="" id="d[;$tTZxooIlKgBe]yQW">x1</variable>
     <variable type="" id="WY[Z@r?A~!CJwM)s5;jW">x2</variable>
   </variables>
-  <block type="procedures_defnoreturn" id="a0WGFO=B$QwK84ii~:?W" collapsed="true" x="0" y="0">
-    <mutation>
-      <arg name="x" varid="UHQ3|=zt6kk8[`s=$pP#"></arg>
-    </mutation>
+  <block type="procedures_defnoreturn" id="a0WGFO=B$QwK84ii~:?W" x="-144" y="28">
     <field name="NAME">Do Count</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
     <statement name="STACK">
