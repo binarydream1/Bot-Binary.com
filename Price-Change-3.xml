@@ -40,8 +40,8 @@
               </block>
             </value>
             <value name="BY">
-              <block type="variables_get" id=",{5+|/j+t,_OPPNnjPsU">
-                <field name="VAR" id="lt|J~bTw6hv/fxy8Cbxv" variabletype="">time</field>
+              <block type="math_number" id="{#MP]lZxf(uW!08]@oQU">
+                <field name="NUM">1</field>
               </block>
             </value>
             <statement name="DO">
