@@ -66,9 +66,7 @@
                         <field name="MODE">GET</field>
                         <field name="WHERE">FROM_END</field>
                         <value name="VALUE">
-                          <block type="variables_get" id="AtbWG;RC3?#g;kq6wH]^">
-                            <field name="VAR" id="U-4Bz.hb|udc^1wXBboS" variabletype="">listing</field>
-                          </block>
+                          <block type="ticks" id="Ky,.pJA_E=05z:[5AM%~" disabled="true"></block>
                         </value>
                         <value name="AT">
                           <block type="variables_get" id="OP!C]{Bb%vy.G4u(({*N">
@@ -86,9 +84,7 @@
                         <field name="MODE">GET</field>
                         <field name="WHERE">FROM_END</field>
                         <value name="VALUE">
-                          <block type="variables_get" id="?6#tj]NW?WnUF}_t-0x?">
-                            <field name="VAR" id="U-4Bz.hb|udc^1wXBboS" variabletype="">listing</field>
-                          </block>
+                          <block type="ticks" id="kjt$v#fQZQb%Ud8/f7G-" disabled="true"></block>
                         </value>
                         <value name="AT">
                           <block type="math_arithmetic" id="Ve$;*ryTb^Uu(c3C;E@-">
