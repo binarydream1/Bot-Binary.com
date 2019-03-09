@@ -1,15 +1,16 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
   <variables>
     <variable type="" id="UHQ3|=zt6kk8[`s=$pP#">x</variable>
+    <variable type="" id="d[;$tTZxooIlKgBe]yQW">x1</variable>
+    <variable type="" id="WY[Z@r?A~!CJwM)s5;jW">x2</variable>
     <variable type="" id="0mT.=JkdHbRfqnITR:G$">PriceChange</variable>
     <variable type="" id="Z*%W5:arc*yG!W[!Uf50">k</variable>
-    <variable type="" id="|Gg1z-EcysW:7s;`_]#g">[fx] Periods</variable>
-    <variable type="" id="C5|GRDppVEf9G~ksG~xv">[fx] InputList</variable>
-    <variable type="" id="]SBxsf%}#UZ0[4j6o!zZ">[fx] Interval</variable>
   </variables>
   <block type="procedures_defnoreturn" id="a0WGFO=B$QwK84ii~:?W" x="0" y="0">
     <mutation>
       <arg name="x" varid="UHQ3|=zt6kk8[`s=$pP#"></arg>
+      <arg name="x1" varid="d[;$tTZxooIlKgBe]yQW"></arg>
+      <arg name="x2" varid="WY[Z@r?A~!CJwM)s5;jW"></arg>
     </mutation>
     <field name="NAME">Do Count</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
@@ -28,7 +29,7 @@
               <block type="logic_negate" id="Kz9w.^1++v1psb#UHel}">
                 <value name="BOOL">
                   <block type="variables_get" id="QW#^sfl@jdhJSn;#L9X^">
-                    <field name="VAR" id="|Gg1z-EcysW:7s;`_]#g" variabletype="">[fx] Periods</field>
+                    <field name="VAR" id="UHQ3|=zt6kk8[`s=$pP#" variabletype="">x</field>
                   </block>
                 </value>
               </block>
@@ -59,7 +60,7 @@
               <block type="logic_negate" id="qI-(4(%|/,O{5XVZ7(Q%">
                 <value name="BOOL">
                   <block type="variables_get" id="O[mM,n*.O$~hOYU1EA^L">
-                    <field name="VAR" id="C5|GRDppVEf9G~ksG~xv" variabletype="">[fx] InputList</field>
+                    <field name="VAR" id="d[;$tTZxooIlKgBe]yQW" variabletype="">x1</field>
                   </block>
                 </value>
               </block>
@@ -90,7 +91,7 @@
               <block type="logic_negate" id="2j/})oD9mw+ZZw%)bELV">
                 <value name="BOOL">
                   <block type="variables_get" id="Dk7j`})Hi=#9QEkx{6U.">
-                    <field name="VAR" id="]SBxsf%}#UZ0[4j6o!zZ" variabletype="">[fx] Interval</field>
+                    <field name="VAR" id="WY[Z@r?A~!CJwM)s5;jW" variabletype="">x2</field>
                   </block>
                 </value>
               </block>
@@ -126,7 +127,7 @@
                     <field name="NUM">0</field>
                   </shadow>
                   <block type="variables_get" id="`=TfWd0#}gk_];X:PhU6">
-                    <field name="VAR" id="|Gg1z-EcysW:7s;`_]#g" variabletype="">[fx] Periods</field>
+                    <field name="VAR" id="UHQ3|=zt6kk8[`s=$pP#" variabletype="">x</field>
                   </block>
                 </value>
               </block>
@@ -151,7 +152,7 @@
                     <field name="NUM">0</field>
                   </shadow>
                   <block type="variables_get" id="Qpx+SsBVCzY#9ZS(3Sjx">
-                    <field name="VAR" id="C5|GRDppVEf9G~ksG~xv" variabletype="">[fx] InputList</field>
+                    <field name="VAR" id="d[;$tTZxooIlKgBe]yQW" variabletype="">x1</field>
                   </block>
                 </value>
               </block>
@@ -187,7 +188,7 @@
                     <field name="NUM">0</field>
                   </shadow>
                   <block type="variables_get" id="H}ULQc:M~fJL4ICqnwIO">
-                    <field name="VAR" id="]SBxsf%}#UZ0[4j6o!zZ" variabletype="">[fx] Interval</field>
+                    <field name="VAR" id="WY[Z@r?A~!CJwM)s5;jW" variabletype="">x2</field>
                   </block>
                 </value>
               </block>
@@ -224,12 +225,12 @@
                 </value>
                 <value name="TO">
                   <block type="variables_get" id="F?)`oLZbZ/_vo#CQ+rM9">
-                    <field name="VAR" id="|Gg1z-EcysW:7s;`_]#g" variabletype="">[fx] Periods</field>
+                    <field name="VAR" id="UHQ3|=zt6kk8[`s=$pP#" variabletype="">x</field>
                   </block>
                 </value>
                 <value name="BY">
                   <block type="variables_get" id=",{5+|/j+t,_OPPNnjPsU">
-                    <field name="VAR" id="]SBxsf%}#UZ0[4j6o!zZ" variabletype="">[fx] Interval</field>
+                    <field name="VAR" id="WY[Z@r?A~!CJwM)s5;jW" variabletype="">x2</field>
                   </block>
                 </value>
                 <statement name="DO">
@@ -255,7 +256,7 @@
                             <field name="WHERE">FROM_END</field>
                             <value name="VALUE">
                               <block type="variables_get" id="AtbWG;RC3?#g;kq6wH]^">
-                                <field name="VAR" id="C5|GRDppVEf9G~ksG~xv" variabletype="">[fx] InputList</field>
+                                <field name="VAR" id="d[;$tTZxooIlKgBe]yQW" variabletype="">x1</field>
                               </block>
                             </value>
                             <value name="AT">
@@ -275,7 +276,7 @@
                             <field name="WHERE">FROM_END</field>
                             <value name="VALUE">
                               <block type="variables_get" id="?6#tj]NW?WnUF}_t-0x?">
-                                <field name="VAR" id="C5|GRDppVEf9G~ksG~xv" variabletype="">[fx] InputList</field>
+                                <field name="VAR" id="d[;$tTZxooIlKgBe]yQW" variabletype="">x1</field>
                               </block>
                             </value>
                             <value name="AT">
