@@ -25,7 +25,7 @@
           <block type="lists_setIndex" id="tIh^UZ.C*0CEG3n(+OLg">
             <mutation at="false"></mutation>
             <field name="MODE">INSERT</field>
-            <field name="WHERE">LAST</field>
+            <field name="WHERE">FIRST</field>
             <value name="LIST">
               <block type="variables_get" id="Kxvewd4TBD-m[(x~RcD}">
                 <field name="VAR" id="l2sY0:yrk2-J?x^!o]U," variabletype="">ChangeList</field>
