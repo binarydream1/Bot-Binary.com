@@ -16,8 +16,8 @@ This is a repository of tools, functions or parts used by me to build trading bo
 Tools List
 ---------
 
-1. Tick Change ([Tick-Change.xml](https://raw.githubusercontent.com/binarydream1/Bot-Binary.com/master/TickChange.xml))
-2. Playing Duration ([Playing-Duration.xml](https://raw.githubusercontent.com/binarydream1/Bot-Binary.com/master/Playing-Duration.xml))
+1. Calculate change of price per tick at specific periods :  ([Tick-Change.xml](https://raw.githubusercontent.com/binarydream1/Bot-Binary.com/master/TickChange.xml))
+2. It is to know the running time of the bot :  ([Playing-Duration.xml](https://raw.githubusercontent.com/binarydream1/Bot-Binary.com/master/Playing-Duration.xml))
 3. Win-Loss Ratio 
 
 ---------
