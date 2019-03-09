@@ -1,15 +1,20 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
   <variables>
+    <variable type="" id="|Gg1z-EcysW:7s;`_]#g">[fx] Periods</variable>
+    <variable type="" id="C5|GRDppVEf9G~ksG~xv">[fx] InputList</variable>
+    <variable type="" id="]SBxsf%}#UZ0[4j6o!zZ">[fx] Interval</variable>
     <variable type="" id="/G!#!gCdDDTcYv)1Jr_d">_Period</variable>
-    <variable type="" id="#%OtWb+I~}#[lC7JzbWX">Periods</variable>
     <variable type="" id="6nsysgeIz0FkC_tFV?#}">_InputList</variable>
-    <variable type="" id="jD$9VykJZy|e)5L,_Y48">InputList</variable>
     <variable type="" id="Hsw6T(QZWGTL8SnG#@sJ">_Interval</variable>
-    <variable type="" id="ok#U:=.e!=X/49:a%yU6">Interval</variable>
     <variable type="" id="0mT.=JkdHbRfqnITR:G$">PriceChange</variable>
     <variable type="" id="Z*%W5:arc*yG!W[!Uf50">k</variable>
   </variables>
   <block type="procedures_defnoreturn" id="a0WGFO=B$QwK84ii~:?W" x="-112" y="444">
+    <mutation>
+      <arg name="[fx] Periods" varid="|Gg1z-EcysW:7s;`_]#g"></arg>
+      <arg name="[fx] InputList" varid="C5|GRDppVEf9G~ksG~xv"></arg>
+      <arg name="[fx] Interval" varid="]SBxsf%}#UZ0[4j6o!zZ"></arg>
+    </mutation>
     <field name="NAME">Do Count</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
     <statement name="STACK">
@@ -17,7 +22,7 @@
         <field name="VAR" id="/G!#!gCdDDTcYv)1Jr_d" variabletype="">_Period</field>
         <value name="VALUE">
           <block type="variables_get" id="`RtM+A/bNuUy7OOGhxXQ">
-            <field name="VAR" id="#%OtWb+I~}#[lC7JzbWX" variabletype="">Periods</field>
+            <field name="VAR" id="|Gg1z-EcysW:7s;`_]#g" variabletype="">[fx] Periods</field>
           </block>
         </value>
         <next>
@@ -25,7 +30,7 @@
             <field name="VAR" id="6nsysgeIz0FkC_tFV?#}" variabletype="">_InputList</field>
             <value name="VALUE">
               <block type="variables_get" id="WR~OPY:0n=niP|75LY/j">
-                <field name="VAR" id="jD$9VykJZy|e)5L,_Y48" variabletype="">InputList</field>
+                <field name="VAR" id="C5|GRDppVEf9G~ksG~xv" variabletype="">[fx] InputList</field>
               </block>
             </value>
             <next>
@@ -33,7 +38,7 @@
                 <field name="VAR" id="Hsw6T(QZWGTL8SnG#@sJ" variabletype="">_Interval</field>
                 <value name="VALUE">
                   <block type="variables_get" id="$#uoD8hSy9CGvFCC_8?l">
-                    <field name="VAR" id="ok#U:=.e!=X/49:a%yU6" variabletype="">Interval</field>
+                    <field name="VAR" id="]SBxsf%}#UZ0[4j6o!zZ" variabletype="">[fx] Interval</field>
                   </block>
                 </value>
                 <next>
