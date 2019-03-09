@@ -11,6 +11,14 @@
   <block type="procedures_defnoreturn" id="a0WGFO=B$QwK84ii~:?W" x="0" y="0">
     <field name="NAME">Do Count</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
+  </block>
+  <block type="procedures_defnoreturn" id="N/:e-#$_NlK.uQvrBBHd" x="-36" y="165">
+    <mutation>
+      <arg name="periode" varid="WL$~}(+B/nI0J]vNG*h%"></arg>
+      <arg name="time" varid="lt|J~bTw6hv/fxy8Cbxv"></arg>
+    </mutation>
+    <field name="NAME">do something</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
     <statement name="STACK">
       <block type="variables_set" id="M~!3X0VAVc[H,)J,5ytz">
         <field name="VAR" id="0mT.=JkdHbRfqnITR:G$" variabletype="">PriceChange</field>
@@ -306,13 +314,5 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block type="procedures_defnoreturn" id="N/:e-#$_NlK.uQvrBBHd" x="0" y="128">
-    <mutation>
-      <arg name="periode" varid="WL$~}(+B/nI0J]vNG*h%"></arg>
-      <arg name="time" varid="lt|J~bTw6hv/fxy8Cbxv"></arg>
-    </mutation>
-    <field name="NAME">do something</field>
-    <comment pinned="false" h="80" w="160">Describe this function...</comment>
   </block>
 </xml>
