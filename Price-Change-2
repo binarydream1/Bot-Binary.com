@@ -1,0 +1,35 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <variables>
+    <variable type="" id="z-hjU1^{}4-^n+;Vk_x]">Periodenya</variable>
+    <variable type="" id="pd3pefzey?T.];q#B~rv">DataTicknya</variable>
+    <variable type="" id="H)O94lDX1Kk^emteRya.">i</variable>
+  </variables>
+  <block type="procedures_defnoreturn" id="nQ2HtOcOZ%_7Rz$j%v/9" x="71" y="198">
+    <mutation>
+      <arg name="Periodenya" varid="z-hjU1^{}4-^n+;Vk_x]"></arg>
+      <arg name="DataTicknya" varid="pd3pefzey?T.];q#B~rv"></arg>
+    </mutation>
+    <field name="NAME">Selisih</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="controls_for" id="Fw8}=rZ5bhYTBr@:KBdg">
+        <field name="VAR" id="H)O94lDX1Kk^emteRya." variabletype="">i</field>
+        <value name="FROM">
+          <block type="math_number" id="XhuH+S@TiEz;gJC-$}G+">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <value name="TO">
+          <block type="variables_get" id="I%Iyi8jGjb;Zm3aIDf_:">
+            <field name="VAR" id="z-hjU1^{}4-^n+;Vk_x]" variabletype="">Periodenya</field>
+          </block>
+        </value>
+        <value name="BY">
+          <block type="math_number" id="*c@^pfF{^AipzMmrf[ix">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
