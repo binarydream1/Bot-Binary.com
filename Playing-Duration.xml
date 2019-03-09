@@ -1,0 +1,261 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <variables>
+    <variable type="" id="C15{{X|9?0O6KQZkMGg+">DurationReport</variable>
+    <variable type="" id="Upjq+A8S`=-W~$n]=V*O">Hour</variable>
+    <variable type="" id="I$4htM}:MZ=-k;X9I(26">StartTime</variable>
+    <variable type="" id="M!pQ5OF|N@[U_([y1uJ_">Minute</variable>
+    <variable type="" id="En7Nq`ugF;t;0R-F4OSE">Second</variable>
+  </variables>
+  <block type="procedures_defreturn" id=":$4a*4V5u8w?weIFvVR4" collapsed="true" x="0" y="0">
+    <field name="NAME">_Playing Duration</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="zrB7+pFtcuDK%ha+s0j%">
+        <field name="VAR" id="Upjq+A8S`=-W~$n]=V*O" variabletype="">Hour</field>
+        <value name="VALUE">
+          <block type="math_round" id="=R@ATyFvAs/KdwjYac.4">
+            <field name="OP">ROUNDDOWN</field>
+            <value name="NUM">
+              <shadow type="math_number" id="R+F.e4Vh_Dh)Ib]cQM?W">
+                <field name="NUM">3.1</field>
+              </shadow>
+              <block type="math_arithmetic" id="D8mh.;:~9t}k0~Gz`-SQ">
+                <field name="OP">DIVIDE</field>
+                <value name="A">
+                  <shadow type="math_number" id="OL~n(hw{$f^qM);,!!7r">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="math_arithmetic" id="d$)lSBmQx3UWO_c-^R(4">
+                    <field name="OP">MINUS</field>
+                    <value name="A">
+                      <shadow type="math_number" id="uVC+bG,DDBWZFs@1-+,T">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="epoch" id="IwILA63c#5jrw8]`~~8m"></block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="[dnJ5|J^$^YC3T$K%t!d">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="`:e92VP8^.?:Xh+J+Vp9">
+                        <field name="VAR" id="I$4htM}:MZ=-k;X9I(26" variabletype="">StartTime</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="0=xKfUAV%OcTPW*9/i_T">
+                    <field name="NUM">3600</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="HB08Mji1Ww}KD9UFOr)~">
+            <field name="VAR" id="M!pQ5OF|N@[U_([y1uJ_" variabletype="">Minute</field>
+            <value name="VALUE">
+              <block type="math_round" id="]v,wj5ol]bqf_K8QocP~">
+                <field name="OP">ROUNDDOWN</field>
+                <value name="NUM">
+                  <shadow type="math_number" id="aZJKnQY.Nx8+Q$[n@*w7">
+                    <field name="NUM">3.1</field>
+                  </shadow>
+                  <block type="math_modulo" id="ZBTTB%#OL-yhS^8yhx7h">
+                    <value name="DIVIDEND">
+                      <shadow type="math_number" id="-h:iC]n[7P?fl(xh}B_x">
+                        <field name="NUM">64</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="3$+pW;zaa?sQtooOc_;%">
+                        <field name="OP">DIVIDE</field>
+                        <value name="A">
+                          <shadow type="math_number" id="OL~n(hw{$f^qM);,!!7r">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="c):-4,z^.*z(DIU$@wR!">
+                            <field name="OP">MINUS</field>
+                            <value name="A">
+                              <shadow type="math_number" id="sVfs?ihypUNvN?Ah8O$0">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="epoch" id="eRAn*U-axRTIzJ4VSWf$"></block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="ekw~7m3?o:4UoiNVE@~^">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="gs{w4Uk=|u[ahEE]qXP+">
+                                <field name="VAR" id="I$4htM}:MZ=-k;X9I(26" variabletype="">StartTime</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="7Xq[$%IYxmdYL2:%gSPy">
+                            <field name="NUM">60</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="DIVISOR">
+                      <shadow type="math_number" id="9m/{u$O{d8sCO6/m}v.{">
+                        <field name="NUM">60</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="s}%4#IkAs({xaBod9eKD">
+                <field name="VAR" id="En7Nq`ugF;t;0R-F4OSE" variabletype="">Second</field>
+                <value name="VALUE">
+                  <block type="math_modulo" id="GKZfsR0[c1#y=qioSczP">
+                    <value name="DIVIDEND">
+                      <shadow type="math_number" id="0wU5)G8x(_3L=:z=X6Ur">
+                        <field name="NUM">64</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="M;gb2!t!@CQ{V%P6waeB">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <shadow type="math_number" id="WpqmdT[[-XtX;dV%E)[4">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="epoch" id="tuMj7RWCr/8}w$F{~o+R"></block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="4-tg%u95GF8MCP9IABm!">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="t|Z2%T+{Q.r8~{IN*}I1">
+                            <field name="VAR" id="I$4htM}:MZ=-k;X9I(26" variabletype="">StartTime</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="DIVISOR">
+                      <shadow type="math_number" id="f~HHLK8Q:yrllohqnIQt">
+                        <field name="NUM">60</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="Y4s{OxrmT*=*TvEcZKL`">
+                    <field name="VAR" id="C15{{X|9?0O6KQZkMGg+" variabletype="">DurationReport</field>
+                    <value name="VALUE">
+                      <block type="text_join" id="7EK?[?aVN?@#^R@vbY`w">
+                        <mutation items="7"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id="So1}JT]^=|),eWBAp?1P">
+                            <field name="TEXT">| Duration : </field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="variables_get" id="_YpxS7MD60T00pXn|g4%">
+                            <field name="VAR" id="Upjq+A8S`=-W~$n]=V*O" variabletype="">Hour</field>
+                          </block>
+                        </value>
+                        <value name="ADD2">
+                          <block type="text" id="+!*0+NmD6}wL*aUMG];c">
+                            <field name="TEXT">h </field>
+                          </block>
+                        </value>
+                        <value name="ADD3">
+                          <block type="variables_get" id="m$OFv84D=E(j!Q4nTog%">
+                            <field name="VAR" id="M!pQ5OF|N@[U_([y1uJ_" variabletype="">Minute</field>
+                          </block>
+                        </value>
+                        <value name="ADD4">
+                          <block type="text" id="GYfgs#})SRrU(zs9nz[_">
+                            <field name="TEXT">m  </field>
+                          </block>
+                        </value>
+                        <value name="ADD5">
+                          <block type="variables_get" id="|%guRdSP(b,sY(y@,J5i">
+                            <field name="VAR" id="En7Nq`ugF;t;0R-F4OSE" variabletype="">Second</field>
+                          </block>
+                        </value>
+                        <value name="ADD6">
+                          <block type="text" id="J)M^`7/IAd/u@fx7e(bF">
+                            <field name="TEXT">s</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="1R%yvIa)JMA(UjAOSl]w">
+        <field name="VAR" id="C15{{X|9?0O6KQZkMGg+" variabletype="">DurationReport</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defnoreturn" id="[rnUn;ajHY(h:)ZqKB*(" collapsed="true" x="0" y="53">
+    <field name="NAME">_StartTime</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="DorWV|n[n]U[!iOPTb/)">
+        <field name="VAR" id="I$4htM}:MZ=-k;X9I(26" variabletype="">StartTime</field>
+        <value name="VALUE">
+          <block type="epoch" id="j%X#}!BC-QXb=fQcboJW"></block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="trade" id="xgH69|xFn9=70w.*3Vo@" x="0" y="106">
+    <field name="MARKET_LIST">volidx</field>
+    <field name="SUBMARKET_LIST">random_index</field>
+    <field name="SYMBOL_LIST">R_100</field>
+    <field name="TRADETYPECAT_LIST">callput</field>
+    <field name="TRADETYPE_LIST">risefall</field>
+    <field name="TYPE_LIST">both</field>
+    <field name="CANDLEINTERVAL_LIST">60</field>
+    <field name="TIME_MACHINE_ENABLED">FALSE</field>
+    <field name="RESTARTONERROR">TRUE</field>
+    <statement name="INITIALIZATION">
+      <block type="procedures_callnoreturn" id="7tt][VEk9:4[=d({zU.)">
+        <mutation name="_StartTime"></mutation>
+      </block>
+    </statement>
+    <statement name="SUBMARKET">
+      <block type="tradeOptions" id="x=V33~4Lb|(sLv`J[:Eb">
+        <field name="DURATIONTYPE_LIST">t</field>
+        <field name="CURRENCY_LIST">USD</field>
+        <value name="DURATION">
+          <shadow type="math_number" id="O*@58sDc=!cOO}*b2vf9">
+            <field name="NUM">5</field>
+          </shadow>
+        </value>
+        <value name="AMOUNT">
+          <shadow type="math_number" id="ml)25~7^q}3I9}vjf:%K">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="tick_analysis" id=":e.Y%0UrSDU0j.nou/$F" x="0" y="514">
+    <statement name="TICKANALYSIS_STACK">
+      <block type="notify" id="%(UD5T,)TDlLw6K!uGFa">
+        <field name="NOTIFICATION_TYPE">error</field>
+        <field name="NOTIFICATION_SOUND">silent</field>
+        <value name="MESSAGE">
+          <shadow type="text" id="#;!q_Il?@}NIet3KY?o}">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="procedures_callreturn" id="llvy~C)PwJ%A`y2_)KHe">
+            <mutation name="_Playing Duration"></mutation>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
