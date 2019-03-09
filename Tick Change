@@ -1,0 +1,102 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <variables>
+    <variable type="" id="D_;{!;g-4%?+9g3Vhm(U">Period</variable>
+    <variable type="" id="BQ.M*p$.yxl7/6/Xx?+Y">Data</variable>
+    <variable type="" id="l2sY0:yrk2-J?x^!o]U,">ChangeList</variable>
+    <variable type="" id="iP!n2@6kz)2tKp%ZkNmt">First</variable>
+    <variable type="" id="N!dXB^azIjxY({D^K)Ny">Last</variable>
+  </variables>
+  <block type="procedures_defnoreturn" id="Sk2J;!/3?v/_G]eSH}GF" collapsed="true" x="7" y="-66">
+    <mutation>
+      <arg name="Period" varid="D_;{!;g-4%?+9g3Vhm(U"></arg>
+      <arg name="Data" varid="BQ.M*p$.yxl7/6/Xx?+Y"></arg>
+    </mutation>
+    <field name="NAME">CountingChange</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="!:vuN$#bmm7n`L~Xom/o">
+        <field name="VAR" id="l2sY0:yrk2-J?x^!o]U," variabletype="">ChangeList</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id="}9Ew+R+?V}vL%qMSdP3X">
+            <mutation items="0"></mutation>
+          </block>
+        </value>
+        <next>
+          <block type="lists_setIndex" id="tIh^UZ.C*0CEG3n(+OLg">
+            <mutation at="false"></mutation>
+            <field name="MODE">INSERT</field>
+            <field name="WHERE">LAST</field>
+            <value name="LIST">
+              <block type="variables_get" id="Kxvewd4TBD-m[(x~RcD}">
+                <field name="VAR" id="l2sY0:yrk2-J?x^!o]U," variabletype="">ChangeList</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_single" id="kv15v-c?z1gB}pd6E,?w">
+                <field name="OP">ABS</field>
+                <value name="NUM">
+                  <shadow type="math_number" id=",^^GRgQc|j6?Uqz|;r9o">
+                    <field name="NUM">9</field>
+                  </shadow>
+                  <block type="math_arithmetic" id="(!(54QHK9[T`r4),jApU">
+                    <field name="OP">DIVIDE</field>
+                    <value name="A">
+                      <shadow type="math_number" id="ZfpFYWjMoh?0/c,).aJn">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="math_round" id="l:irHc/8,S2c_!t?[)`V">
+                        <field name="OP">ROUND</field>
+                        <value name="NUM">
+                          <shadow type="math_number" id="L8Ul0iJT$mHuYw|I4TFb">
+                            <field name="NUM">3.1</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="mLt4J}eGmDWIQptxug^O">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <shadow type="math_number" id=";1=%`%czJ8Wb:zvWM3oE">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="AkzeH=%9;CY66Pt?4`a3">
+                                <field name="OP">MINUS</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="ebf-[n]o#cZf;Rd[[$q^">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="O`CHnj`RYKdA|lEOl1oz">
+                                    <field name="VAR" id="iP!n2@6kz)2tKp%ZkNmt" variabletype="">First</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="Q@CL5qCS$Zxw?z|M^g)4">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="IjQV^F6863z%@{.Lg#5t">
+                                    <field name="VAR" id="N!dXB^azIjxY({D^K)Ny" variabletype="">Last</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="4o6Skd}MmxC|u?+gq0`%">
+                                <field name="NUM">100</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="1RGEwsRMRfy-36d#+P[,">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
