@@ -18,6 +18,6 @@ Tools List
 
 1. Calculate change of price per tick at specific periods :  [Tick-Change.xml](https://raw.githubusercontent.com/binarydream1/Bot-Binary.com/master/TickChange.xml)
 2. It is to know the running time of the bot :  [Playing-Duration.xml](https://raw.githubusercontent.com/binarydream1/Bot-Binary.com/master/Playing-Duration.xml)
-3. Win-Loss Ratio 
+3. Percentage of Win-Loss Ratio : Win-Loss.xml
 
 ---------
